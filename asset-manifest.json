@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/student-portal/static/css/main.073c9b0a.css",
-    "main.js": "/student-portal/static/js/main.5e7ffd57.js",
+    "main.css": "/student-portal/static/css/main.7d6b28e5.css",
+    "main.js": "/student-portal/static/js/main.e8767c0a.js",
     "static/js/787.976a88de.chunk.js": "/student-portal/static/js/787.976a88de.chunk.js",
-    "static/media/logo.svg": "/student-portal/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/student-portal/index.html",
-    "main.073c9b0a.css.map": "/student-portal/static/css/main.073c9b0a.css.map",
-    "main.5e7ffd57.js.map": "/student-portal/static/js/main.5e7ffd57.js.map",
+    "main.7d6b28e5.css.map": "/student-portal/static/css/main.7d6b28e5.css.map",
+    "main.e8767c0a.js.map": "/student-portal/static/js/main.e8767c0a.js.map",
     "787.976a88de.chunk.js.map": "/student-portal/static/js/787.976a88de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.5e7ffd57.js"
+    "static/css/main.7d6b28e5.css",
+    "static/js/main.e8767c0a.js"
   ]
 }
