@@ -1,8 +1,10 @@
-# Live Preview at: https://armanahsanhabib.github.io/student-portal/
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Live Preview: 
+
+https://armanahsanhabib.github.io/student-portal/
 
 ## Available Scripts
 
