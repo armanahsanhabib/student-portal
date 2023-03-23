@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Preview: 
 
-https://armanahsanhabib.github.io/student-portal/
+Live preview at: https://armanahsanhabib.github.io/student-portal/
 
 ## Available Scripts
 
