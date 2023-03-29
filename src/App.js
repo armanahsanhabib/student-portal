@@ -1,75 +1,36 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './assets/css/style.min.css';
+import students from './assets/database/students.json';
+import Dashboard from './pages/Dashboard';
 import LoginPage from './pages/LoginPage';
 
-const database = [
-  {
-    userId: "user1",
-    pass: "pass1"
-  },
-  {
-    userId: "user2",
-    pass: "pass2"
-  },
-  {
-    userId: "12311000",
-    pass: "admin0"
-  },
-  {
-    userId: "12311001",
-    pass: "admin1"
-  },
-  {
-    userId: "12311002",
-    pass: "admin2"
-  },
-  {
-    userId: "12311003",
-    pass: "admin3"
-  },
-];
-
-const errors = {
-  uname: "invalid username",
-  pass: "invalid password"
-};
-
 const App = () => {
-  const [errorMessages, setErrorMessages] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [userName, setUserName] = useState("");
+  const [nickName, setNickName] = useState("");
+  const [userId, setUserId] = useState("");
 
-  // Generate JSX code for error message
-  const renderErrorMessage = (name) =>
-    name === errorMessages.name && (
-      <div className="error">{errorMessages.message}</div>
-    );
-
-  const handleSubmit = (event) => {
-    //Prevent page reload
-    event.preventDefault();
-
-    var { uname, pass } = document.forms[0];
-
-    // Find user login info
-    const userData = database.find((user) => user.username === uname.value);
-
-    // Compare user info
-    if (userData) {
-      if (userData.password !== pass.value) {
-        // Invalid password
-        setErrorMessages({ name: "pass", message: errors.pass });
+  const handleSubmit = () => {
+    const userId = document.getElementById("userId").value;
+    const pass = document.getElementById("pass").value;
+    const user = students.find((user) => user.userId === userId);
+    if (user) {
+      if (user.pass === pass) {
+        setLoggedIn(true);
+        setUserName(user.name);
+        setNickName(user.nickName);
+        setUserId(user.userId);
       } else {
-        setIsSubmitted(true);
+        alert("Password is incorrect");
       }
     } else {
-      // Username not found
-      setErrorMessages({ name: "uname", message: errors.uname });
+      alert("User not found");
     }
-  };
+  }
 
   return (
     <div>
-      <LoginPage handleSubmit={handleSubmit} />
+      {loggedIn ? <Dashboard name={userName} nickName={nickName} userId={userId} /> : <LoginPage handleSubmit={handleSubmit} />}
     </div>
   );
 };

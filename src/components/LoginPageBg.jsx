@@ -3,7 +3,7 @@ import bg_image from '../assets/images/5437682.png';
 
 const LoginPageBg = () => {
     return (
-        <div className='bg-blue-500 md:h-screen h-2/4 md:w-2/4 w-full flex justify-center items-center text-center'>
+        <div className='bg-blue-500 h-screen w-2/4 flex justify-center items-center text-center'>
             <div className="text-slate-50">
                 <img
                     src={bg_image} alt="bg_image"

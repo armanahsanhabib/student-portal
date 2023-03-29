@@ -1,14 +1,15 @@
 import React from 'react';
+import { FaUser } from 'react-icons/fa';
 
 const LoginPageForm = (props) => {
     return (
-        <div class="md:h-screen h-2/4 md:w-2/4 w-full bg-slate-50 flex items-center">
+        <div class="h-screen w-2/4 bg-slate-50 flex items-center">
             <form
                 class="flex flex-col items-center mx-auto rounded-lg shadow-md border border-gray-50 py-8 px-10 bg-white"
-                onSubmit={props.handleSubmit}
+                onSubmit={() => props.handleSubmit()}
             >
                 <div className="icon text-3xl bg-blue-100 h-16 w-16 flex items-center justify-center rounded-full mb-3">
-                    <i className="fa-solid fa-user"></i>
+                    <FaUser />
                 </div>
                 <h1 className='text-3xl font-medium mb-2'>Login</h1>
                 <p className='mb-5'>
@@ -17,15 +18,16 @@ const LoginPageForm = (props) => {
                 <div class="mb-4 w-full">
                     <input
                         class="appearance-none border-2 border-blue-500 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="userid"
+                        id="userId"
                         type="text"
                         placeholder="User ID"
+                        autoFocus
                     />
                 </div>
                 <div class="mb-6 w-full">
                     <input
                         class="appearance-none border-2 border-blue-500 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="password"
+                        id="pass"
                         type="password"
                         placeholder="********"
                     />
