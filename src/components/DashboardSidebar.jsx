@@ -17,7 +17,7 @@ const NavList = (props) => {
     );
 }
 
-const DashboardSidebar = () => {
+const DashboardSidebar = (props) => {
     return (
         <div className='bg-blue-500 w-80 h-screen p-5 text-gray-50 flex flex-col justify-between'>
             <section>
@@ -35,7 +35,7 @@ const DashboardSidebar = () => {
                     <NavList icon={MdVideoLibrary} iconText="Video Tutorials" />
                 </ul>
             </section>
-            <section>
+            <section onClick={() => props.handleLogOut()}>
                 <NavList icon={FaSignOutAlt} iconText="Log out" styleName="hover:bg-rose-500" />
             </section>
         </div>
