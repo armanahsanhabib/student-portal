@@ -6,13 +6,7 @@ import LoginPage from './pages/LoginPage';
 
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
-  const [name, setName] = useState("");
-  const [nickName, setNickName] = useState("");
   const [userId, setUserId] = useState("");
-  const [section, setSection] = useState("");
-  const [blood, setBlood] = useState("");
-  const [mobile, setMobile] = useState("");
-  const [email, setEmail] = useState("");
 
   const handleSubmit = () => {
     const userId = document.getElementById("userId").value;
@@ -21,13 +15,7 @@ const App = () => {
     if (user) {
       if (user.pass === pass) {
         setLoggedIn(true);
-        setName(user.name);
-        setNickName(user.nickName);
         setUserId(user.userId);
-        setSection(user.section);
-        setBlood(user.blood);
-        setMobile(user.mobile);
-        setEmail(user.email);
       } else {
         alert("Password is incorrect");
       }
@@ -42,7 +30,13 @@ const App = () => {
 
   return (
     <div>
-      {loggedIn ? <Dashboard name={name} nickName={nickName} userId={userId} section={section} blood={blood} mobile={mobile} email={email} handleLogOut={handleLogOut} /> : <LoginPage handleSubmit={handleSubmit} />}
+      {loggedIn ?
+        <Dashboard
+          userId={userId}
+          handleLogOut={handleLogOut}
+        /> : <LoginPage
+          handleSubmit={handleSubmit}
+        />}
     </div>
   );
 };
