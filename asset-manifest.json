@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/student-portal/static/css/main.0864f923.css",
-    "main.js": "/student-portal/static/js/main.3a4ab24d.js",
+    "main.css": "/student-portal/static/css/main.61aaa084.css",
+    "main.js": "/student-portal/static/js/main.8f88579b.js",
     "static/js/787.976a88de.chunk.js": "/student-portal/static/js/787.976a88de.chunk.js",
     "static/media/12311068.jpeg": "/student-portal/static/media/12311068.b55afd1cd768ae1cfd49.jpeg",
     "static/media/12311064.jpeg": "/student-portal/static/media/12311064.37a2c75b36dd7995c999.jpeg",
@@ -87,12 +87,12 @@
     "static/media/12311014.jpeg": "/student-portal/static/media/12311014.f9b7de2002a6960b3a86.jpeg",
     "static/media/12311056.jpeg": "/student-portal/static/media/12311056.e298a6b20c02b3f083a7.jpeg",
     "index.html": "/student-portal/index.html",
-    "main.0864f923.css.map": "/student-portal/static/css/main.0864f923.css.map",
-    "main.3a4ab24d.js.map": "/student-portal/static/js/main.3a4ab24d.js.map",
+    "main.61aaa084.css.map": "/student-portal/static/css/main.61aaa084.css.map",
+    "main.8f88579b.js.map": "/student-portal/static/js/main.8f88579b.js.map",
     "787.976a88de.chunk.js.map": "/student-portal/static/js/787.976a88de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0864f923.css",
-    "static/js/main.3a4ab24d.js"
+    "static/css/main.61aaa084.css",
+    "static/js/main.8f88579b.js"
   ]
 }
