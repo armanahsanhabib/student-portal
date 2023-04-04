@@ -3,7 +3,7 @@ import { FaUser } from 'react-icons/fa';
 
 const LoginPageForm = (props) => {
     return (
-        <div className="h-screen w-2/4 bg-slate-50 flex items-center">
+        <div className="h-1/2 md:h-screen w-full md:w-1/2 py-16 bg-slate-50 flex items-center">
             <form
                 className="flex flex-col items-center mx-auto rounded-lg shadow-md border border-gray-50 py-8 px-10 bg-white"
                 onSubmit={() => props.handleSubmit()}
@@ -11,7 +11,7 @@ const LoginPageForm = (props) => {
                 <div className="icon text-3xl bg-blue-100 h-16 w-16 flex items-center justify-center rounded-full mb-3">
                     <FaUser />
                 </div>
-                <h1 className='text-3xl font-medium mb-2'>Login</h1>
+                <h1 className='text-2xl md:text-3xl font-medium mb-2'>Login</h1>
                 <p className='mb-5'>
                     Please enter your ID and Password.
                 </p>

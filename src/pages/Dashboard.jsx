@@ -1,21 +1,6 @@
-/* import React from 'react';
-import DashboardSidebar from '../components/DashboardSidebar';
-import ProfileDetails from '../components/ProfileDetails';
-
-const Dashboard = (props) => {
-    return (
-        <div className='grid grid-cols-2' style={{ gridTemplateColumns: "320px 1fr" }}>
-            <DashboardSidebar handleLogOut={props.handleLogOut} />
-            <ProfileDetails nickName={props.nickName} userId={props.userId} name={props.name} section={props.section} blood={props.blood} mobile={props.mobile} email={props.email} />
-        </div>
-    );
-};
-
-export default Dashboard;
- */
-
 import React, { useEffect, useState } from 'react';
 import DashboardSidebar from '../components/DashboardSidebar';
+import DashboardTopbar from '../components/DashboardTopbar';
 import MyResult from '../components/MyResult';
 import NoticeBoard from '../components/NoticeBoard';
 import ProfileDetails from '../components/ProfileDetails';
@@ -33,9 +18,19 @@ const Dashboard = (props) => {
         setActiveComponent(componentName);
     }
 
+    const handleResponsiveNavbar = () => {
+        const sidebar = document.getElementById('sidebar');
+
+        sidebar.classList.toggle('hidden');
+        sidebar.classList.toggle('sticky');
+
+        console.log('clicked');
+    }
+
     return (
-        <div className='grid grid-cols-2' style={{ gridTemplateColumns: "320px 1fr" }}>
+        <div className='block lg:grid grid-cols-2' style={{ gridTemplateColumns: "320px 1fr" }}>
             <DashboardSidebar handleLogOut={props.handleLogOut} handleNavClick={handleNavClick} />
+            <DashboardTopbar handleLogOut={props.handleLogOut} handleResponsiveNavbar={handleResponsiveNavbar} />
             {
                 activeComponent === 'profile' &&
                 <ProfileDetails

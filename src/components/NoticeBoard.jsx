@@ -4,7 +4,7 @@ import NoticeList from './NoticeList';
 
 const NoticeBoard = () => {
     return (
-        <div className='my-8 px-8 mx-auto' style={{ width: "1200px" }}>
+        <div className='my-3 md:my-5 px-3 md:px-8 mx-auto md:container'>
             <NoticeList
                 date="31"
                 month="Mar"

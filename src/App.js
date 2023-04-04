@@ -30,13 +30,7 @@ const App = () => {
 
   return (
     <div>
-      {loggedIn ?
-        <Dashboard
-          userId={userId}
-          handleLogOut={handleLogOut}
-        /> : <LoginPage
-          handleSubmit={handleSubmit}
-        />}
+      {loggedIn ? <Dashboard userId={userId} handleLogOut={handleLogOut} /> : <LoginPage handleSubmit={handleSubmit} />}
     </div>
   );
 };
