@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/student-portal/static/css/main.61aaa084.css",
-    "main.js": "/student-portal/static/js/main.8f88579b.js",
+    "main.css": "/student-portal/static/css/main.a4af7368.css",
+    "main.js": "/student-portal/static/js/main.7218f47c.js",
     "static/js/787.976a88de.chunk.js": "/student-portal/static/js/787.976a88de.chunk.js",
     "static/media/12311068.jpeg": "/student-portal/static/media/12311068.b55afd1cd768ae1cfd49.jpeg",
     "static/media/12311064.jpeg": "/student-portal/static/media/12311064.37a2c75b36dd7995c999.jpeg",
@@ -29,7 +29,7 @@
     "static/media/12311078.jpeg": "/student-portal/static/media/12311078.0a6443590e2b29350940.jpeg",
     "static/media/12311023.jpeg": "/student-portal/static/media/12311023.00282e64bf602b50835b.jpeg",
     "static/media/12311043.jpeg": "/student-portal/static/media/12311043.cc1a7d4ea2606e6556bc.jpeg",
-    "static/media/12311027.jpeg": "/student-portal/static/media/12311027.5557e821973e8c5127f2.jpeg",
+    "static/media/naruf.jpeg": "/student-portal/static/media/naruf.5557e821973e8c5127f2.jpeg",
     "static/media/12311074.jpeg": "/student-portal/static/media/12311074.6ed39cda9035cdc23ae5.jpeg",
     "static/media/12311047.jpeg": "/student-portal/static/media/12311047.ca830cbcd356c9ec389a.jpeg",
     "static/media/12311012.jpeg": "/student-portal/static/media/12311012.f08c010a7235710bdfaf.jpeg",
@@ -40,6 +40,7 @@
     "static/media/12311052.jpeg": "/student-portal/static/media/12311052.16dfca225e10f1163088.jpeg",
     "static/media/12311042.jpeg": "/student-portal/static/media/12311042.9ade561e7572606c91e0.jpeg",
     "static/media/12311040.jpeg": "/student-portal/static/media/12311040.330840964b0bd87788e1.jpeg",
+    "static/media/12311027.jpeg": "/student-portal/static/media/12311027.f9169401eae386dc303a.jpeg",
     "static/media/12311026.jpeg": "/student-portal/static/media/12311026.6ed24efd3a9dcb3bacd8.jpeg",
     "static/media/12311011.jpeg": "/student-portal/static/media/12311011.48634442a63695204406.jpeg",
     "static/media/12311090.jpeg": "/student-portal/static/media/12311090.7983963fee0190a0e3c1.jpeg",
@@ -87,12 +88,12 @@
     "static/media/12311014.jpeg": "/student-portal/static/media/12311014.f9b7de2002a6960b3a86.jpeg",
     "static/media/12311056.jpeg": "/student-portal/static/media/12311056.e298a6b20c02b3f083a7.jpeg",
     "index.html": "/student-portal/index.html",
-    "main.61aaa084.css.map": "/student-portal/static/css/main.61aaa084.css.map",
-    "main.8f88579b.js.map": "/student-portal/static/js/main.8f88579b.js.map",
+    "main.a4af7368.css.map": "/student-portal/static/css/main.a4af7368.css.map",
+    "main.7218f47c.js.map": "/student-portal/static/js/main.7218f47c.js.map",
     "787.976a88de.chunk.js.map": "/student-portal/static/js/787.976a88de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.61aaa084.css",
-    "static/js/main.8f88579b.js"
+    "static/css/main.a4af7368.css",
+    "static/js/main.7218f47c.js"
   ]
 }
