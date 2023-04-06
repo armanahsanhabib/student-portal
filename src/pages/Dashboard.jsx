@@ -9,6 +9,7 @@ import VideoTutorials from '../components/VideoTutorials';
 
 const Dashboard = (props) => {
     const [activeComponent, setActiveComponent] = useState(null);
+    const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
         setActiveComponent('profile');
@@ -16,45 +17,23 @@ const Dashboard = (props) => {
 
     const handleNavClick = (componentName) => {
         setActiveComponent(componentName);
+        setIsOpen(!isOpen);
     }
 
-    const handleResponsiveNavbar = () => {
-        const sidebar = document.getElementById('sidebar');
-
-        sidebar.classList.toggle('hidden');
-        sidebar.classList.toggle('sticky');
-
-        console.log('clicked');
-    }
+    const handleMenuClick = () => {
+        setIsOpen(!isOpen);
+        console.log(isOpen);
+    };
 
     return (
         <div className='block lg:grid grid-cols-2' style={{ gridTemplateColumns: "320px 1fr" }}>
-            <DashboardSidebar handleLogOut={props.handleLogOut} handleNavClick={handleNavClick} />
-            <DashboardTopbar handleLogOut={props.handleLogOut} handleResponsiveNavbar={handleResponsiveNavbar} />
-            {
-                activeComponent === 'profile' &&
-                <ProfileDetails
-                    userId={props.userId}
-                />
-            }
-            {
-                activeComponent === 'notice' &&
-                <NoticeBoard />
-            }
-            {
-                activeComponent === 'result' &&
-                <MyResult
-                    userId={props.userId}
-                />
-            }
-            {
-                activeComponent === 'study' &&
-                <StudyMaterials />
-            }
-            {
-                activeComponent === 'video' &&
-                <VideoTutorials />
-            }
+            <DashboardSidebar handleLogOut={props.handleLogOut} handleNavClick={handleNavClick} isOpen={isOpen} />
+            <DashboardTopbar handleLogOut={props.handleLogOut} handleMenuClick={handleMenuClick} isOpen={isOpen} />
+            {activeComponent === 'profile' && <ProfileDetails userId={props.userId} />}
+            {activeComponent === 'notice' && <NoticeBoard />}
+            {activeComponent === 'result' && <MyResult userId={props.userId} />}
+            {activeComponent === 'study' && <StudyMaterials />}
+            {activeComponent === 'video' && <VideoTutorials />}
         </div>
     );
 };

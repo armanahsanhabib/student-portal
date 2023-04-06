@@ -1,17 +1,31 @@
+import { AiOutlineCalendar } from 'react-icons/ai';
+import { BiNotification } from 'react-icons/bi';
+import { FaDownload } from 'react-icons/fa';
+
 const NoticeList = (props) => {
     return (
-        <section className='flex items-center rounded-lg border shadow-sm py-5 px-8 mb-5'>
-            <div className='text-3xl mr-5 font-bold text-center bg-green-500 py-2 px-5 rounded-lg text-gray-50'>
-                {/* <BsBell className='text-5xl' /> */}
-                {props.date} <br /> {props.month}
+        <section className='rounded-lg border shadow-sm py-5 px-8'>
+            <div className='flex justify-between items-center'>
+                <div className='flex items-center text-3xl font-bold text-purple-600'>
+                    <BiNotification className='mr-2' />
+                    <h1 className='text-xl font-bold'>
+                        {props.title}
+                    </h1>
+                </div>
+                <div className='flex items-center text-lg text-gray-500'>
+                    <AiOutlineCalendar className='mr-2' />
+                    {props.date}
+                </div>
             </div>
+            <hr className='my-3' />
             <div>
-                <h1 className='text-xl font-bold mb-1'>
-                    {props.title}
-                </h1>
                 <h2 className='text-lg text-gray-600'>
-                    {props.description}
+                    {props.notice}
                 </h2>
+            </div>
+            <div className='flex items-center text-sm font-medium mt-3 text-rose-500 cursor-pointer'>
+                <FaDownload className='mr-2' />
+                <a href={props.link}>Downlaod Notice</a>
             </div>
         </section>
     );

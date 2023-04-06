@@ -11,13 +11,13 @@ import cse103 from '../assets/database/result/cse103.json';
 import cse105 from '../assets/database/result/cse105.json';
 import math1011 from '../assets/database/result/math1011.json';
 import phys1014 from '../assets/database/result/phys1014.json';
+import placeholderImage from '../assets/database/students-image/placeholder-image.jpeg';
 import students from '../assets/database/students.json';
 import MakrsCard from './MarksCard';
 import StudentInfoList from './StudentInfoList';
 
 const MyResult = (props) => {
     const imageSrc = require(`../assets/database/students-image/${props.userId}.jpeg`);
-    // const imageSrc = require(`../assets/database/students-image/12311033.jpeg`);
     const cse101Result = cse101.find(user => user.userId === props.userId);
     const cse103Result = cse103.find(user => user.userId === props.userId);
     const cse105Result = cse105.find(user => user.userId === props.userId);
@@ -34,46 +34,49 @@ const MyResult = (props) => {
 
     return (
         <div className='my-3 md:my-5 px-3 md:px-8 mx-auto md:container overflow-y-auto'>
-            <section className='flex items-center rounded-lg border shadow-md py-5 px-8'>
-                <div className='mr-5 text-5xl text-orange-500'>
+            <section className='flex items-center rounded-lg border shadow-md px-3 py-3 lg:py-5 lg:px-8'>
+                <div className='mr-3 lg:mr-5 text-5xl text-orange-500'>
                     <TbTargetArrow />
                 </div>
                 <div>
-                    <h1 className='text-2xl font-bold mb-1'>
+                    <h1 className='text-lg lg:text-2xl font-bold mb-0 lg:mb-1'>
                         1st Semester Result
                     </h1>
-                    <h2 className='text-lg text-gray-600'>
+                    <h2 className='text-sm lg:text-lg text-gray-600'>
                         <span className="font-bold text-green-500">Congratulationss!</span> <span className='font-bold'>{studentsInfo.nickName},</span> You have <span className="font-bold">passed</span> the 1st semester with <span className="font-bold">{cgpa.toFixed(2)}</span> CGPA.
                     </h2>
                 </div>
             </section>
-            <section className='rounded-lg border shadow-sm py-5 px-8 mt-5'>
-                <h2 className='text-lg font-bold text-gray-600'>
+            <section className='rounded-lg border shadow-sm py-5 px-5 lg:px-8 mt-5'>
+                <h2 className='text-md lg:text-lg font-bold text-gray-600'>
                     Student Information
                 </h2>
                 <hr className='mt-3 mb-5' />
                 <div className='flex justify-between items-start'>
                     <div>
-                        <div className=''>
-                            <StudentInfoList title="Name" titleValue={studentsInfo.name} iconName={BiUser} />
-                            <StudentInfoList title="Student ID" titleValue={studentsInfo.userId} iconName={AiOutlineNumber} />
-                            <StudentInfoList title="Section" titleValue={studentsInfo.section} iconName={BiGroup} />
-                            <StudentInfoList title="Semester" titleValue="1st Semester" iconName={CgCodeSlash} />
-                            <StudentInfoList title="Program" titleValue="B.Sc. in Computer Science and Engineering" iconName={SlGraduation} />
-                            <StudentInfoList title="CGPA" titleValue={cgpa.toFixed(2)} iconName={AiOutlineCalculator} />
-                        </div>
+                        <StudentInfoList title="Name" titleValue={studentsInfo.name} iconName={BiUser} />
+                        <StudentInfoList title="Student ID" titleValue={studentsInfo.userId} iconName={AiOutlineNumber} />
+                        <StudentInfoList title="Section" titleValue={studentsInfo.section} iconName={BiGroup} />
+                        <StudentInfoList title="Semester" titleValue="1st Semester" iconName={CgCodeSlash} />
+                        <StudentInfoList title="Program" titleValue="B.Sc. in Computer Science and Engineering" iconName={SlGraduation} />
+                        <StudentInfoList title="CGPA" titleValue={cgpa.toFixed(2)} iconName={AiOutlineCalculator} />
                     </div>
-                    <div className='h-48 w-auto rounded-md p-2 bg-gray-50 border'>
-                        <img src={imageSrc} className="h-full overflow-hidden" alt="stud_image" />
+                    <div className='hidden lg:block h-48 w-auto rounded-md p-2 bg-gray-50 border'>
+                        <img
+                            src={imageSrc}
+                            onError={(e) => e.target.src = placeholderImage}
+                            className="h-full overflow-hidden"
+                            alt="stud_image"
+                        />
                     </div>
                 </div>
             </section>
-            <section className='rounded-lg border shadow-sm py-5 px-8 mt-5'>
-                <h2 className='text-lg font-bold text-gray-600'>
+            <section className='rounded-lg border shadow-sm py-5 px-5 lg:px-8 mt-5'>
+                <h2 className='text-md lg:text-lg font-bold text-gray-600'>
                     Details Marksheet
                 </h2>
                 <hr className='mt-3 mb-5' />
-                <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-6'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 justify-items-center gap-8'>
                     <MakrsCard
                         subCode="CSE-101"
                         subName="Computer & Programming"
