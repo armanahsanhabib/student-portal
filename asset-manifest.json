@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/student-portal/static/css/main.a4af7368.css",
-    "main.js": "/student-portal/static/js/main.7218f47c.js",
+    "main.css": "/student-portal/static/css/main.f1a9827d.css",
+    "main.js": "/student-portal/static/js/main.267acdf6.js",
     "static/js/787.976a88de.chunk.js": "/student-portal/static/js/787.976a88de.chunk.js",
     "static/media/12311068.jpeg": "/student-portal/static/media/12311068.b55afd1cd768ae1cfd49.jpeg",
     "static/media/12311064.jpeg": "/student-portal/static/media/12311064.37a2c75b36dd7995c999.jpeg",
@@ -19,6 +19,7 @@
     "static/media/12311045.jpeg": "/student-portal/static/media/12311045.ebcbed00b9cd467037f7.jpeg",
     "static/media/12311067.jpeg": "/student-portal/static/media/12311067.35e888cf44b4d744d143.jpeg",
     "static/media/12311060.jpeg": "/student-portal/static/media/12311060.1ee537befbb0c3f4185e.jpeg",
+    "static/media/placeholder-image.jpeg": "/student-portal/static/media/placeholder-image.2cc6b106e438794c5892.jpeg",
     "static/media/12311029.jpeg": "/student-portal/static/media/12311029.4db2315fc5a3b426958b.jpeg",
     "static/media/12311002.jpeg": "/student-portal/static/media/12311002.a626d542a9583e507068.jpeg",
     "static/media/12311004.jpeg": "/student-portal/static/media/12311004.46a20457be7a6ee6b2fb.jpeg",
@@ -88,12 +89,12 @@
     "static/media/12311014.jpeg": "/student-portal/static/media/12311014.f9b7de2002a6960b3a86.jpeg",
     "static/media/12311056.jpeg": "/student-portal/static/media/12311056.e298a6b20c02b3f083a7.jpeg",
     "index.html": "/student-portal/index.html",
-    "main.a4af7368.css.map": "/student-portal/static/css/main.a4af7368.css.map",
-    "main.7218f47c.js.map": "/student-portal/static/js/main.7218f47c.js.map",
+    "main.f1a9827d.css.map": "/student-portal/static/css/main.f1a9827d.css.map",
+    "main.267acdf6.js.map": "/student-portal/static/js/main.267acdf6.js.map",
     "787.976a88de.chunk.js.map": "/student-portal/static/js/787.976a88de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4af7368.css",
-    "static/js/main.7218f47c.js"
+    "static/css/main.f1a9827d.css",
+    "static/js/main.267acdf6.js"
   ]
 }
