@@ -142,45 +142,6 @@ const MyResult = (props) => {
                         grade={phys1014Result.grade}
                         point={phys1014Result.point}
                     />
-                    <MakrsCard
-                        subCode="CSE-101"
-                        subName="Computer & Programming"
-                        iconName={MdOutlineDesktopWindows}
-                        ct={cse101Result.ct}
-                        asm={cse101Result.asm}
-                        atd={cse101Result.atd}
-                        mid={cse101Result.mid}
-                        final={cse101Result.final}
-                        total={cse101Total}
-                        grade={cse101Result.grade}
-                        point={cse101Result.point}
-                    />
-                    <MakrsCard
-                        subCode="CSE-103"
-                        subName="Structured Programming"
-                        iconName={BsCodeSlash}
-                        ct={cse103Result.ct}
-                        asm={cse103Result.asm}
-                        atd={cse103Result.atd}
-                        mid={cse103Result.mid}
-                        final={cse103Result.final}
-                        total={cse103Total}
-                        grade={cse103Result.grade}
-                        point={cse103Result.point}
-                    />
-                    <MakrsCard
-                        subCode="CSE-105"
-                        subName="Electrical Circuits"
-                        iconName={BsCpu}
-                        ct={cse105Result.ct}
-                        asm={cse105Result.asm}
-                        atd={cse105Result.atd}
-                        mid={cse105Result.mid}
-                        final={cse105Result.final}
-                        total={cse105Total}
-                        grade={cse105Result.grade}
-                        point={cse105Result.point}
-                    />
                 </div>
             </section>
         </div>
