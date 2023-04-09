@@ -10,7 +10,7 @@ import NavList from './NavList';
 const DashboardSidebar = (props) => {
     return (
         <div
-            className={`${props.isOpen ? 'block' : 'hidden'} lg:flex bg-blue-500 w-80 h-screen lg:sticky fixed top-12 lg:top-0 left-0 p-5 text-gray-50 flex-col justify-between z-50`}
+            className={`${props.isOpen ? 'block' : 'hidden'} lg:flex bg-blue-500 w-80 h-screen lg:sticky fixed top-12 lg:top-0 left-0 p-5 text-gray-50 flex-col justify-between z-10`}
             id='sidebar'
         >
             <section>

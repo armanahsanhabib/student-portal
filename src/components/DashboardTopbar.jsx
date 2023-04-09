@@ -4,7 +4,7 @@ import { MdOutlineSpaceDashboard } from 'react-icons/md';
 
 const DashboardTopbar = (props) => {
     return (
-        <div className='flex lg:hidden justify-between items-center text-gray-50 sticky top-0 left-0 right-0 py-3 px-5 bg-blue-500 z-50' >
+        <div className='flex lg:hidden justify-between items-center text-gray-50 sticky top-0 left-0 right-0 py-3 px-5 bg-blue-500 z-10' >
             <section>
                 <div onClick={() => props.handleMenuClick()}>
                     {props.isOpen ? <FaTimes /> : <FaBars />}
