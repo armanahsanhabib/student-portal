@@ -241,4 +241,4 @@ const StudyMaterials = () => {
     );
 };
 
-export default StudyMaterials;
+export default StudyMaterials; 

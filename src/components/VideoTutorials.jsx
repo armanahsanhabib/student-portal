@@ -3,7 +3,6 @@ import thumbnail_image from '../assets/images/thumbnail.png';
 import VideoTutorialsCard from './VideoTutorialsCard';
 import VideoTutorialsSection from './VideoTutorialsSection';
 
-
 const videoTutorials = [
     {
         sectionName: "CSE-101: Introduction of computer and programming",
